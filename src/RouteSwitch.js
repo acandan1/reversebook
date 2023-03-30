@@ -30,7 +30,7 @@ const RouteSwitch = () => {
     }
     
         return (
-        <BrowserRouter basename="/odinbook">
+        <BrowserRouter basename="/odin-facebook">
             <ScrollToTop/>
             <Routes>
                 <Route path="/" element={ checkAuthentication() ? <Home/> : <Navigate to='/sign-in' /> }></Route>
