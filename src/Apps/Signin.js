@@ -66,7 +66,7 @@ const Signin = (props) => {
 
                 <Button variant="primary" type="submit">Log In</Button>
                 <hr></hr>
-                <Button variant="success" id="create-button" href="/sign-up">Create new account</Button>
+                <Button variant="success" id="create-button" href="https://acandan1.github.io/odin-facebook/sign-up">Create new account</Button>
             </Form>
         </Container>
     )

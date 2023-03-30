@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 
 const Header = (props) => {
     const myId = localStorage.getItem('id');
-    const link = `/user/${myId}`;
+    const link = `https://acandan1.github.io/odin-facebook/user/${myId}`;
     const [bool, setBool] = useState(false);
     const [proPic, setProPic] = useState(person);
     
@@ -83,18 +83,18 @@ const Header = (props) => {
     return (
         <Navbar sticky='top' bg="white" id="our-navbar">
             <Container fluid >
-                <Navbar.Brand href="/">
+                <Navbar.Brand href="https://acandan1.github.io/odin-facebook/">
                     <img src={facebook} alt="facebook"></img>
                 </Navbar.Brand>
                 <Container>
                     <Nav justify variant="tabs" >
                         <Nav.Item>
-                            <Nav.Link href="/friends">
+                            <Nav.Link href="https://acandan1.github.io/odin-facebook/friends">
                                 <img src={friends} alt="friends" className="nav-logos"></img>
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="/">
+                            <Nav.Link href="https://acandan1.github.io/odin-facebook/">
                                 <img src={home} alt="home" className="nav-logos"></img>
                             </Nav.Link>
                         </Nav.Item>
@@ -105,7 +105,7 @@ const Header = (props) => {
                         </Nav.Item>
                     </Nav>
                 </Container>
-                <Navbar.Brand href="/" onClick={ handleLogout }>
+                <Navbar.Brand href="https://acandan1.github.io/odin-facebook/sign-in" onClick={ handleLogout }>
                     <Button variant="danger">Logout</Button>
                 </Navbar.Brand>
             </Container>

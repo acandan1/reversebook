@@ -179,7 +179,7 @@ const Signup = () => {
                 <Button variant="success" type="submit">
                     Sign Up
                 </Button>
-                <Alert.Link href='/sign-in' id="signup-link">Already have an account?</Alert.Link>
+                <Alert.Link href='https://acandan1.github.io/odin-facebook/sign-in' id="signup-link">Already have an account?</Alert.Link>
             </Form>
         </Container>
     )
