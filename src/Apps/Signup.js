@@ -7,7 +7,7 @@ import { Container, Image, Form, Button, Alert } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
-    const href = `${window.location.origin.toString()}/odin-facebook/sign-in`;
+    const href = `${window.location.origin.toString()}/reversebook/sign-in`;
 
     const [item, setItem] = useState({ kindOfStand: "", another: "another" });
     const { kindOfStand } = item;

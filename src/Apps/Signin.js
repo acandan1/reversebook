@@ -6,7 +6,7 @@ import { Container, Image, Form, Button } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
 
 const Signin = (props) => {
-    const href = `${window.location.origin.toString()}/odin-facebook/sign-up`;
+    const href = `${window.location.origin.toString()}/reversebook/sign-up`;
 
     const navigate = useNavigate();
 
