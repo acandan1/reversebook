@@ -52,7 +52,7 @@ const FriendRequest = (props) => {
             <Image src={profilePic} className="user-friend-requests-images"></Image>
                 <h1 className="user-friend-requests-name">{props.name}</h1>
                 <p className="friend-requests-bio">{props.bio}</p>
-                <Button onClick={confirmRequest}>Confirm</Button>
+                <Button onClick={confirmRequest} variant="danger">Confirm</Button>
                 <Button variant="secondary" onClick={deleteRequest}>Delete</Button>
         </Container>
     )

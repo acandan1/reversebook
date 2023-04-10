@@ -1,11 +1,12 @@
 import React from "react";
 
-import logo from '../media/logo.svg';
+import logo from '../media/new-logo.jpg';
 
 import { Container, Image, Form, Button } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
 
 const Signin = (props) => {
+    const href = `${window.location.origin.toString()}/odin-facebook/sign-up`;
 
     const navigate = useNavigate();
 
@@ -51,9 +52,11 @@ const Signin = (props) => {
 
     return (
         <Container fluid className="signin-page">
-            <Image fluid="true" src={logo} alt="facebook" id="signup-img"></Image>
+            
             <Form className="signin-form" onSubmit={handleSubmit}>
-                <h1 id="signup-header">Log Into Facebook</h1>
+                <Image fluid="true" src={logo} alt="facebook" id="signup-img"></Image>
+
+                <h1 id="signup-header">Log Into Reversebook</h1>
                 <hr></hr>
 
                 <Form.Group>
@@ -64,9 +67,9 @@ const Signin = (props) => {
                     <Form.Control name="password" type="password" placeholder="Password" required minLength="7" maxLength="15"/>
                 </Form.Group>
 
-                <Button variant="primary" type="submit">Log In</Button>
+                <Button variant="danger" type="submit">Log In</Button>
                 <hr></hr>
-                <Button variant="success" id="create-button" href="https://acandan1.github.io/odin-facebook/sign-up">Create new account</Button>
+                <Button variant="success" id="create-button" href={href}>Create new account</Button>
             </Form>
         </Container>
     )

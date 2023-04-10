@@ -73,12 +73,13 @@ html, body {
 
     min-height: 100vh;
 
-    background-color: aliceblue;
+    background-color: rgb(252, 93, 93);
 }
 
 #signup-img {
     max-width: 300px;
     height: auto;
+    margin-bottom: 10px;
 }
 
 .signup-form {
@@ -118,7 +119,7 @@ html, body {
 
     min-height: 100vh;
 
-    background-color: aliceblue;
+    background-color: rgb(252, 93, 93);
 }
 
 .signin-form {

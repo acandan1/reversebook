@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import facebook from '../media/facebook.png';
+import facebook from '../media/new-logo.jpg';
 import home from '../media/home.svg';
 import friends from '../media/friends.svg';
 import person from '../media/person.svg';
@@ -10,10 +10,18 @@ import { Navbar, Nav, Container, Button} from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
 
 const Header = (props) => {
+    const homepage =  `${window.location.origin.toString()}/odin-facebook`;
+
+    
+    const friendspage = `${homepage}/friends`;
+    const signin = `${homepage}/sign-in`;
+
+
     const myId = localStorage.getItem('id');
-    const link = `https://acandan1.github.io/odin-facebook/user/${myId}`;
     const [bool, setBool] = useState(false);
     const [proPic, setProPic] = useState(person);
+
+    const userpage = `${homepage}/user/${myId}`;
     
     const navigate = useNavigate()
 
@@ -83,29 +91,29 @@ const Header = (props) => {
     return (
         <Navbar sticky='top' bg="white" id="our-navbar">
             <Container fluid >
-                <Navbar.Brand href="https://acandan1.github.io/odin-facebook/">
+                <Navbar.Brand href={homepage}>
                     <img src={facebook} alt="facebook"></img>
                 </Navbar.Brand>
                 <Container>
                     <Nav justify variant="tabs" >
                         <Nav.Item>
-                            <Nav.Link href="https://acandan1.github.io/odin-facebook/friends">
+                            <Nav.Link href={friendspage}>
                                 <img src={friends} alt="friends" className="nav-logos"></img>
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="https://acandan1.github.io/odin-facebook/">
+                            <Nav.Link href={homepage}>
                                 <img src={home} alt="home" className="nav-logos"></img>
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href={link}>
+                            <Nav.Link href={userpage}>
                                 <img src={proPic} alt="profile" className="nav-logos" id="header-pp"></img>
                             </Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Container>
-                <Navbar.Brand href="https://acandan1.github.io/odin-facebook/sign-in" onClick={ handleLogout }>
+                <Navbar.Brand href={signin} onClick={ handleLogout }>
                     <Button variant="danger">Logout</Button>
                 </Navbar.Brand>
             </Container>

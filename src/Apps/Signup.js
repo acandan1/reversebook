@@ -1,12 +1,14 @@
 import React from "react";
 import { useState } from "react";
 
-import logo from '../media/logo.svg';
+import logo from '../media/new-logo.jpg';
 
 import { Container, Image, Form, Button, Alert } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
+    const href = `${window.location.origin.toString()}/odin-facebook/sign-in`;
+
     const [item, setItem] = useState({ kindOfStand: "", another: "another" });
     const { kindOfStand } = item;
     const arr = [];
@@ -115,8 +117,9 @@ const Signup = () => {
 
     return (
         <Container fluid className="signup-page">
-            <Image fluid="true" src={logo} alt="facebook" id="signup-img"></Image>
             <Form className="signup-form" onSubmit={ handleSubmit }>
+                <Image fluid="true" src={logo} alt="facebook" id="signup-img"></Image>
+
                 <h1 id="signup-header">Create a new account</h1>
                 <p id="signup-para">It's quicky and easy.</p>
                 <hr></hr>
@@ -179,7 +182,7 @@ const Signup = () => {
                 <Button variant="success" type="submit">
                     Sign Up
                 </Button>
-                <Alert.Link href='https://acandan1.github.io/odin-facebook/sign-in' id="signup-link">Already have an account?</Alert.Link>
+                <Alert.Link href={href} id="signup-link">Already have an account?</Alert.Link>
             </Form>
         </Container>
     )
