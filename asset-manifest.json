@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/reversebook/static/css/main.4d2f55fe.css",
+    "main.js": "/reversebook/static/js/main.c745dca0.js",
+    "static/media/robot.jpg": "/reversebook/static/media/robot.3386f676d0580b65a21d.jpg",
+    "static/media/gigachad.jpg": "/reversebook/static/media/gigachad.c88f6eed1143c3b95041.jpg",
+    "static/media/new-logo.jpg": "/reversebook/static/media/new-logo.8c65cba1fa2f2395eb34.jpg",
+    "static/media/friends.svg": "/reversebook/static/media/friends.933d7302ee80d83926ba7448bb595612.svg",
+    "static/media/like.svg": "/reversebook/static/media/like.6cfad4be33b7671b725f19608a9eafe4.svg",
+    "static/media/home.svg": "/reversebook/static/media/home.eae844053b33158171b0b3d3e23667d5.svg",
+    "index.html": "/reversebook/index.html",
+    "static/media/edit.svg": "/reversebook/static/media/edit.532f7c50678a9e6b579f2f05e4eebc7f.svg",
+    "static/media/comment.svg": "/reversebook/static/media/comment.23868a7ee1ab33a51ae0ffc41ea08241.svg",
+    "static/media/person.svg": "/reversebook/static/media/person.431b0119278a762b7985d2549fbe862e.svg",
+    "main.4d2f55fe.css.map": "/reversebook/static/css/main.4d2f55fe.css.map",
+    "main.c745dca0.js.map": "/reversebook/static/js/main.c745dca0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d2f55fe.css",
+    "static/js/main.c745dca0.js"
+  ]
+}
